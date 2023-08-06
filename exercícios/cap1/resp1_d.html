@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas de um aluno</title>
+</head>
+<body>
+    <script>
+        const nome = prompt("Digite o nome do aluno: ")
+        let nota1 = Number(prompt("Digite a primeira nota do aluno: "))
+        let nota2 = Number(prompt("Digite a segunda nota do aluno: "))
+        let media = (nota1 + nota2)/ 2
+
+        if(media >= "6"){
+            alert (`As notas do aluno ${nome} são: \n 
+            A primeira nota: ${nota1.toFixed(1)} \n 
+            A segunda nota: ${nota2.toFixed(1)}\n
+            A média final do ${nome} é: ${media.toFixed(1)}\n
+            O aluno está aprovado` )
+        }
+        else{
+            alert(`As notas do aluno ${nome} são:\n
+            A primeira nota é: ${nota1.toFixed(1)}\n
+            A segunda nota é: ${nota2.toFixed(1)}\n
+            A média final do ${nome} é: ${media.toFixed(1)}\n
+            Aluno está reprovado`)
+        }
+    </script>
+</body>
+</html>
