@@ -7,8 +7,7 @@ const resp4 = document.querySelector("#outResp4")
 
 //criando um "ouvinte" de evento, acionado quando o botão submit for clicado
 
-frm.addEventListener(
-    "submit", (e) => {
+frm.addEventListener( "submit", (e) => {
         const marca = frm.inVeiculo.value // pegando o valor do campo do nome marca do veículo
         const modelo = frm.inModelo.value // pegando o valor do campo do nome modelo do veículo
         const preco = Number(frm.inValor.value) //  pegando o valor do campo do preço do veículo
