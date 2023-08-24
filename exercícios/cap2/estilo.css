@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:#8DABD9;
+    color: white;
+}
+
+header{
+    background-image: linear-gradient(#646870, #425170, #6F88BD);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+header > h1{
+        text-align: center;
+        font-family: 'Times New Roman','Verdana', sans-serif ;
+        font-size: 3em;
+        margin: 20px;
+        box-shadow: 5px, 19px, 9px, black
+}
+
+div#corpo{
+    background-color: white;
+    color: #425170;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form > p {
+        margin: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+}
+
+p > input.inValor {
+      border-radius:5px;
+      box-shadow: 5px, 19px, 9px, black;
+      padding: 2px;
+}
+
+p > input.inTempo {
+    border-radius:5px;
+    box-shadow: 5px, 19px, 9px, black;
+    padding: 2px;
+}
+
+p > input.botao {
+    background-color: #425170;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+

@@ -10,7 +10,8 @@ frm.addEventListener("submit", (e) => {
            const medicamento = frm.inMedicamento.value
            const valor = Number(frm.inValor.value)
 
-           const promo = Math.floor((valor + valor ) /1.01); //arredondadoParaBaixo
+           // const promo = Math.floor((valor + valor ) /1.01); //arredondadoParaBaixo
+           const promo = Math.floor(valor + valor); //arredondadoParaBaixo
 ''
            resp1.innerText = `O  Nome é: ${medicamento}`
            resp2.innerText = `Promoção levando 2 sai o valor: R$ ${promo.toFixed(2)}`
