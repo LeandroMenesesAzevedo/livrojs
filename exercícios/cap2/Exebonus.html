@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            font-family:Cambria;
+            font-size: 1em;
+            background-color: #201740;
+        }
+
+        header{
+            background-image:linear-gradient(to left, #201740,#2B1E59,#42208C,#6E34BF )
+        }
+
+        header > h1{
+            color:#4EA66D;
+            text-align: center;
+            font-size: 3em;
+            padding:40px;
+            text-shadow: 3px 2px 2px black;
+        }
+
+        main > div {
+            margin: 30px;
+            padding: 10px;
+            background-color:#6E34BF;
+            text-align: center;
+            font-weight: bold;
+            color:white;
+        }
+
+        p {
+            margin:4px;
+            padding: 4px;
+            font-size: 1.2em;
+        }
+
+        input {
+            width: 150px;
+            height: 20px;
+            border-radius: 4px;
+            box-shadow: 1px 1px 2px black;
+        }
+        
+        p > input.botao{
+            background-color: #201740;
+            color: #4EA66D;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-shadow: 3px 2px 2px black
+            width: 180px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h1> Calculadora de IMC </h1>
+    </header>
+    <main>
+        <div>
+            <form>
+                <p>Digite Nome: <input type="text" id="inNome"></p> 
+                <p>Qual seu peso: <input type="text" id="inPeso"></p>
+                <p>Qual sua altura: <input type="text" id="inAltura"></p>
+                <p><input type="submit" value="Calcular" class="botao"></p>
+           </form>
+           <h4></h4>
+        </div>
+    </main>
+    <script src="jscrpit/bonus.js"></script>
+</body>
+</html>
