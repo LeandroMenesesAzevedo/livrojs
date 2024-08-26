@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Revisando Exercício B </title>
+    <script>
+
+        alert(" Bem Vindo a Pizzaria Italiana ")
+        const vconta = Number(prompt(" Digite o valor da conta: "))
+        const pessoas = Number(prompt (" Digite a quantidade de pessoas da mesa: "))
+        const total = vconta/pessoas
+        const garcom = vconta * 0.10
+        const totaltax = total + garcom
+
+        alert(` O valor da conta é -> ${vconta.toFixed(2)}
+                O a quantidade de pessoas da mesa é -> ${pessoas.toFixed(2)} 
+                O Valor total para cada pessoa é -> ${total.toFixed(2)}
+                Taxa de serviço -> ${garcom} *Opcional
+                Caso queira manter  Taxa de serviço -> ${totaltax.toFixed(2)}`)
+                
+    </script>
+</head>
+<body>
+    <!--Um programa de um pizzaria que leia o valor da conta quantidade de pessoas e quanto cada um ira pagar-->
+</body>
+</html>
