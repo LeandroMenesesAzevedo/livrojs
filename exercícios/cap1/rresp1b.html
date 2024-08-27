@@ -7,17 +7,17 @@
     <script>
 
         alert(" Bem Vindo a Pizzaria Italiana ")
-        const vconta = Number(prompt(" Digite o valor da conta: "))
-        const pessoas = Number(prompt (" Digite a quantidade de pessoas da mesa: "))
-        const total = vconta/pessoas
-        const garcom = vconta * 0.10
-        const totaltax = total + garcom
+        const vconta = Number(prompt(" Digite o valor da conta: "))// Entrada de dados
+        const pessoas = Number(prompt (" Digite a quantidade de pessoas da mesa: ")) // Entrada de dados
+        const total = vconta/pessoas // Processamento de dados
+        const garcom = vconta * 0.10 // Processamento de dado
+        const totaltax = total + garcom // Processamento de dados
 
         alert(` O valor da conta é -> ${vconta.toFixed(2)}
                 O a quantidade de pessoas da mesa é -> ${pessoas.toFixed(2)} 
                 O Valor total para cada pessoa é -> ${total.toFixed(2)}
                 Taxa de serviço -> ${garcom} *Opcional
-                Caso queira manter  Taxa de serviço -> ${totaltax.toFixed(2)}`)
+                Caso queira manter  Taxa de serviço -> ${totaltax.toFixed(2)}`) // Saída de dados
                 
     </script>
 </head>
