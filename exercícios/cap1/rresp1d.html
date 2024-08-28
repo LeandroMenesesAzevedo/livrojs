@@ -9,8 +9,36 @@
     <!--Programa que leia duas notas e mostre a media -->
 
     <script>
-        alert("Bem Vindo ao sistema de notas do Colégio Victoria ")
-        const nome = prompt("Digite o nome do aluno: ")
+        alert("Bem Vindo ao sistema de notas do Colégio Victoria ") 
+        const nome = prompt("Digite o nome do aluno: ") // ENTRADA DE DADOS
+        const mat = prompt("Digite o nome da disciplina: ") // ENTRADA DE DADOS
+        const nota_1 = Number(prompt("Digite a primeira nota: ")) // ENTRADA DE DADOS
+        const nota_2 = Number(prompt("Digite a segunda nota: ")) // ENTRADA DE DADOS
+        
+        const media = (nota_1 + nota_2)/2 // PROCESSAMENTO
+
+        if(media >= 6.0) {
+            alert(`
+                O nome do aluno é:  ${nome}\n
+                O nome da disciplina é:  ${mat}\n
+                A 1ª Nota:  ${nota_1}\n
+                A 2ª Nota:  ${nota_2}\n
+                A Média:  ${media}\n
+                ****ALUNO APROVADO ****    `) // SAÍDAS DE DADOS
+        } else{
+            alert(`
+                O nome do aluno é:  ${nome}\n
+                O nome da disciplina é:  ${mat}\n
+                A 1ª Nota:  ${nota_1}\n
+                A 2ª Nota:  ${nota_2}\n
+                A Média:  ${media}\n
+                **** ALUNO REPROVADO ****    `) // SAÍDAS DE DADOS
+        }
+
+
+
+
+        
     </script>
 </body>
 </html>
