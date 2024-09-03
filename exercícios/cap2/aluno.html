@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media do Aluno</title>
+<style>
+    *{
+        padding: 0px;
+        margin:0px;
+    }
+
+    body{
+        background-color: rgba(128, 128, 128, 0.577);
+    }
+
+    div{
+        background-color: white;
+        margin: 50px;
+        padding: 10px;
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        text-align: center;
+
+        border-radius: 10px;
+    }
+
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    div > form{
+                margin: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form > input{ 
+                margin-top: 20px;
+                font-size: 14px;
+                height: 20px;
+                border-radius: 5px;
+    }
+
+    
+    input.botao{
+        height: 50px;
+        width: 100px;
+
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.64);
+        
+        background-color: gray;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+</style>
+
+</head>
+<body>
+    <div>
+        <h1> Boletim Oline </h1>
+        <form action="">
+            Nome: <input type="text" name="nome" id="inome" placeholder=" Digite o Nome do aluno. " required> <br>
+            Nota 1 : <input type="number" name="n1" id="in1" placeholder=" Digite a primeira nota."> <br>
+            Nota 2: <input type="number" name="n2" id="in2" placeholder="Digite a primeira nota."> <br>
+
+            <input type="submit" value="Enviar" class="botao">
+        </form>
+    </div>
+
+    <h3></h3>
+
+    <script src="jscrpit/aluno.js"></script>
+</body>
+</html>
