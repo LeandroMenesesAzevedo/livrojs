@@ -7,8 +7,8 @@ const resp= document.querySelector("h3")
 
 frm.addEventListener("submit", (e) => {
     const nome = frm.inome.value
-    const n1 = frm.in1.value
-    const n2 = frm.in2.value
+    const n1 = Number (frm.in1.value)
+    const n2 = Number (frm.in2.value)
     const media = (n1+ n2)/2
 
     resp.innerText = ` O nome do aluno é: ${nome} \n
