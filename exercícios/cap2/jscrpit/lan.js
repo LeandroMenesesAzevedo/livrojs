@@ -7,11 +7,13 @@ frm.addEventListener("submit", (e)=> {
         const minuto = Number(frm.iminuto.value)
         const tempo = Number(frm.itempo.value)
 
-        const pagar = tempo *(minuto * 60)
+        const periodo =  Math.ceil(tempo/15)
+        const pagar =  periodo * minuto
 
-        resp.innerText = ` ${minuto}\n
-                            ${tempo} 
-                            ${pagar}`
+
+        resp.innerText = ` O valor por 15min é:  ${minuto.toFixed(2)}
+                           O tempo ultilizado foi: ${tempo} 
+                           O total a pagar: ${pagar.toFixed(2)}`
 
         e.preventDefault()
 });
